@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
 body .layout{
     display: flex;
 }
@@ -16,19 +21,13 @@ body .layout .box_container .box{
 .layout .sidebar{
     min-width: fit-content;
 }
-.center {
-    margin: auto;
-    width: 60%;
-    border: 3px solid #73AD21;
-    padding: 10px;
-}
 @media screen and (max-width: 414px){
     .center {
         margin: auto;
         width: 60%;
         border: 3px solid #73AD21;
         padding: 10px;
-    }
+      }
     body .layout{
         display: block;
         background-color: blue;
@@ -43,8 +42,8 @@ body .layout .box_container .box{
         justify-content: center;
     }
     body .layout .box_container .box{
-        width: 90px;
-        height: 80px;
+        width: 90.33px;
+        height: 78px;
         border: solid 0.1px white;
     }
 }
