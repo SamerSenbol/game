@@ -6,6 +6,11 @@
 body .layout{
     display: flex;
 }
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    place-content: center center;
+}
 
 body .layout .box_container{
     display: flex;
@@ -21,6 +26,26 @@ body .layout .box_container .box{
 .layout .sidebar{
     min-width: fit-content;
 }
+.layout .sidebar .controll_tools_container button{
+    padding: 6px;
+    margin: 2px;
+    font-weight: bold;
+    font-family:monospace;
+    border-radius: 5px;
+}
+.layout .sidebar .controll_tools_container .first_box{
+    display: flex;
+    flex-direction: column;
+}
+.layout .sidebar .controll_tools_container .between_boxes{
+    display: flex;
+    justify-content: space-between;
+}
+.layout .sidebar .controll_tools_container .second_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 @media screen and (max-width: 414px){
     .center {
         margin: auto;
@@ -29,12 +54,27 @@ body .layout .box_container .box{
         padding: 10px;
       }
     body .layout{
-        display: block;
-        background-color: blue;
-        
+        display: block;  
+    }
+    .layout .sidebar .controll_tools_container button{
+        padding: 6px;
+        margin: 2px;
+        font-weight: bold;
+        font-family:monospace;
+        border-radius: 5px;
     }
     .layout .sidebar .controll_tools_container .first_box{
-        min-width: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+    .layout .sidebar .controll_tools_container .between_boxes{
+        display: flex;
+        justify-content: space-between;
+    }
+    .layout .sidebar .controll_tools_container .second_box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
     body .layout .box_container{
         display: flex;
